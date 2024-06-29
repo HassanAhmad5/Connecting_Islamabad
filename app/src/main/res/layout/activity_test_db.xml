@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextHostname"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:hint="Host"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextPort"
+        android:layout_below="@id/editTextHostname"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:hint="port"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextDatabaseName"
+        android:layout_below="@id/editTextPort"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:hint="Db"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextUsername"
+        android:layout_below="@+id/editTextDatabaseName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:hint="Name"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextPassword"
+        android:layout_below="@id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:hint="Pass"/>
+
+
+
+
+
+    <!-- Other EditText fields for port, database name, username, and password -->
+
+    <Button
+        android:id="@+id/buttonTestConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:text="Test Connection" />
+</RelativeLayout>
